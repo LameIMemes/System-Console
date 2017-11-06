@@ -1,7 +1,0 @@
-local Data = game:GetService("DataStoreService")
-local GetData = Data:GetAysnc("DataStoreName", global) -- Change "DataStoreName" to your Data Store key, scope can be global or player id
-
-
-
-
-
