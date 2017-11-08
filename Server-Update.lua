@@ -11,6 +11,9 @@ game.ReplicatedStorage.ConsoleUpdate.OnServerEvent:connect(function()
     CampLevel:UpdateAsync(script.Parent.LevelEdit.Text, script.Parent.IdEnter)
     BanData:UpdateAsync(script.Parent.Banned, script.Parent.IdEnter)
     BanData:UpdateAsync(script.Parent.ReleaseDate, script.Parent.IdEnter)
+          
+ end
+   end)
 
     
   
