@@ -13,6 +13,11 @@ if Banned == false then
   script.Parent.Banned.Text=""
 else
   script.Parent.Banned.Text="X"
+        
+ end
+      end)
+  end
+
  
 
   
