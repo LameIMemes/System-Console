@@ -1,13 +1,15 @@
 local Data = game:GetService("DataStoreService")
-local BanData = Data:GetDataStore("BanData")
-local CampData = Data:GetDataStore("Money")
-local CampLevel = Data:GetStore("Level")
+local CampData = Data:GetGlobalDataStore("CampData")
+
 game.Players.PlayerAdded:connect(function(plar)
 
-script.Parent.Level.Text="Level: "..CampLevel:GetAsync("Level", script.Parent.IdEnter.Text)
-script.Parent.CampStat.Text= CampData:GetAsync("Money, script.Parent.IdEnter.Text)
+    while wait() do
+   --              --
+script.Parent.IdEnter.Text == Players:GetUserIdFromNameAsync(script.Parent.IdEnter)
+script.Parent.Level.Text="Level: "..CampData:GetAsync("Level", script.Parent.IdEnter.Text)
+script.Parent.CampStat.Text= CampData:GetAsync("Money", script.Parent.IdEnter.Text)
 
-local Banned = BanData:GetAsync("Banned", script.Parent.IdEnter.Text)
+local Banned = CampData:GetAsync("Banned", script.Parent.IdEnter.Text)
 
 if Banned == false then
   script.Parent.Banned.Text=""
@@ -17,7 +19,7 @@ else
  end
       end)
   end
-
+end
  
 
   
