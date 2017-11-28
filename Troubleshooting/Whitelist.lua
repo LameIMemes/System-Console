@@ -6,7 +6,7 @@ local Whitelist = "5067993"
 
 while wait() do
 
-if plar.UserId== Whitelist and game.plarui.SystemConsole.Parent = plarui then
+if plar.UserId== Whitelist and plarui.SystemConsole.Parent = plarui then
 else
 plar:kick("No hecking exploiting loser")
 end
