@@ -12,11 +12,6 @@ script.Parent.CampStat.Text= CampData:GetAsync("Money", script.Parent.IdEnter.Te
 
 local Banned = CampData:GetAsync("Banned", script.Parent.IdEnter.Text)
 
-if Banned == false then
-  script.Parent.Banned.Text=""
-else
-  script.Parent.Banned.Text="X"
-        
  end
       end)
   end
