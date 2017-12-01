@@ -9,8 +9,8 @@ game.Players.PlayerAdded:connect(function(plar)
    --              --
 script.Parent.IdEnter.Text == Players:GetUserIdFromNameAsync(script.Parent.IdEnter)
             wait()
-script.Parent.Level.Text="Level: "..CampData:GetAsync(script.Parent.IdEnter.Text)
-script.Parent.MoneyEdit.Text= CampData:GetAsync(script.Parent.IdEnter.Text)
+script.Parent.LevelEdit.Text= CampData:GetAsync(script.Parent.IdEnter.Text)
+script.Parent.MoneyEdit.Text= Money:GetAsync(script.Parent.IdEnter.Text)
 
 script.Parent.IsBanned.Value = Banned:GetAsync(script.Parent.IdEnter.Text)
 
