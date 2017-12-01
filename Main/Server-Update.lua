@@ -9,13 +9,15 @@ local CampDolla = CampData:GetDataStore("Money")
 --    --
 
 game.ReplicatedStorage.ConsoleUpdate.OnServerEvent:connect(function()
-    CampDolla:UpdateAsync(script.Parent.MoneyEdit.Text, script.Parent.IdEnter)
-    CampLevel:UpdateAsync(script.Parent.LevelEdit.Text, script.Parent.IdEnter)
-    BanData:UpdateAsync(script.Parent.IsBanned.Value, script.Parent.IdEnter)
-    Release:UpdateAsync(script.Parent.ReleaseDate.Text, script.Parent.IdEnter)
+Local key = "user_"..script.Parent.IdEnter.Text
+    CampDolla:UpdateAsync(key, script.Parent.MoneyEdit.Text)
+    CampLevel:UpdateAsync(key, script.Parent.LevelEdit.Text)
+    BanData:UpdateAsync(key, script.Parent.IsBanned.Value)
+    Release:UpdateAsync(key, script.Parent.ReleaseDate.Text)
           
  end
    end
+end
 end)
 
     
