@@ -13,7 +13,7 @@ Local key = "user_"..script.Parent.IdEnter.Text
     CampData:UpdateAsync(key, script.Parent.LevelEdit.Text)
     BanData:UpdateAsync(key, script.Parent.IsBanned.Value)
     Release:UpdateAsync(key, script.Parent.ReleaseDate.Text)
-          
+ script.Parent.Status.Text="Profile Updated!"
  end
    end
 end
