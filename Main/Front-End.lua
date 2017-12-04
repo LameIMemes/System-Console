@@ -2,17 +2,18 @@ local Data = game:GetService("DataStoreService")
 local Level = Data:GetDataStore("CampData")
 local Money = Data:GetDataStore("Money")
 local Banned = Data:GetDataStore("Banned")
+local Release = Data:GetDataStore("Release_Date")
+local DateBanned = Data:GetDataStore("Date_Banned")
 
 game.Players.PlayerAdded:connect(function(plar)
-
-    while wait() do
    --              --
-script.Parent.IdEnter.Text == Players:GetUserIdFromNameAsync(script.Parent.IdEnter)
+script.Parent.IdEnter.Text == Players:GetUserIdFromNameAsync(script.Parent.IdEnter.Text)
             wait()
 script.Parent.LevelEdit.Text= CampData:GetAsync(script.Parent.IdEnter.Text)
-script.Parent.MoneyEdit.Text= Money:GetAsync(script.Parent.IdEnter.Text)
-
-script.Parent.IsBanned.Value = Banned:GetAsync(script.Parent.IdEnter.Text)
+    script.Parent.MoneyEdit.Text= Money:GetAsync(script.Parent.IdEnter.Text)
+        script.Parent.IsBanned.Value = Banned:GetAsync(script.Parent.IdEnter.Text)
+            script.Parent.ReleaseDate.Text = Release:GetAsync(script.Parent.IdEnter.Text)
+        script.Parent.BanDate.Text = Data:GetAsync(script.Parent.IdEnter.Text)
 
 script.Parent.Banned.MouseButton1Click:connect(function()
 if script.Parent.IsBanned.Value == true then
