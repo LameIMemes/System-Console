@@ -11,10 +11,10 @@ local Comment = CampData:GetDataStore("Reason")
 game.ReplicatedStorage.ConsoleUpdate.OnServerEvent:connect(function()
 Local key = "user_"..script.Parent.IdEnter.Text
     CampDolla:UpdateAsync(key, function(MoneyValue)
-    CampData:UpdateAsync(key, funtion(LevelValue)
+    CampData:UpdateAsync(key, function(LevelValue)
     BanData:UpdateAsync(key, function(Banned)
     Release:UpdateAsync(key, function(ReleaseDate)
-    Comment:UpdateAsync(key, funtion(Comments)
+    Comment:UpdateAsync(key, function(Comments)
  
  local newMoney = MoneyValue or 0
   newMoney = newMoney + script.Parent.MoneyEdit.Text
