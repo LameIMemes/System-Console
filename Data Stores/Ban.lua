@@ -5,7 +5,7 @@ game.Players.PlayerAdded:connect(function(plar)
 local BanData = {}
  Banned = false
   
--- To be continued xd'dx    --
+-- Need function arguement towards UpdateAsync   --
  
 
  
