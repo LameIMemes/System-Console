@@ -99,7 +99,14 @@ LeftT.Name = "Time_Left"
   Enter.TextScaled = true
   Enter.Text = "Enter"
   Enter.Name = "IDEnterFire"
-   
+  
+ local Enter = Instance.new("TextButton")
+  
+  Enter.BackgroundColor3 = Color3.new(255,0,0)
+  Enter.Parent = user.PlayerGui:WaitForChild(clon).Main.Console
+  Enter.TextScaled = true
+  Enter.Text = "Insert Rank"
+  Enter.Name = "rank"
 
 --[[ Things to do, sizing, positions, other unamed stuff I guess. ]]--
 
