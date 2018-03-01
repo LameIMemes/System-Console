@@ -12,6 +12,7 @@ game.Players.PlayerAdded:connect(function(plar)
    --              --
       script.Parent.Enter.MouseButton1Click:connect(function()
 script.Parent.IdEnter.Text == Players:GetUserIdFromNameAsync(script.Parent.IdEnter.Text)
+   
     
 --                 --
     
